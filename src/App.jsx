@@ -44,6 +44,11 @@ export default function HomePage() {
             <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
             </a>
             <img src="/clients/cst.png" alt="Consulting Software Testing" />
+            {/* Duplicating */}
+            <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
+            <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
+            </a>
+            <img src="/clients/cst.png" alt="Consulting Software Testing" />
           </div>
         </div>
       </div>

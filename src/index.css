@@ -266,18 +266,15 @@ p.tight {
 }
 
 .client-carousel {
-  width: 300px; /* same as image width */
-  height: 200px;
+  width: 300px;             /* width of visible area */
   overflow: hidden;
   margin: 0 auto;
-  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  width: 600px; /* 2 images × 300px */
-  animation: slide-one-by-one 8s infinite;
-  transition: transform 1s ease-in-out;
+  width: max-content;
+  animation: scroll-continuous 8s linear infinite;
 }
 
 .carousel-track img {
@@ -287,9 +284,11 @@ p.tight {
   flex-shrink: 0;
 }
 
-@keyframes slide-one-by-one {
-  0%   { transform: translateX(0); }
-  45%  { transform: translateX(0); }
-  55%  { transform: translateX(-300px); }
-  100% { transform: translateX(-300px); }
+@keyframes scroll-continuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-600px); /* shift by 2 logos */
+  }
 }
