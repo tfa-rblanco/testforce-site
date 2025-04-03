@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
       <header className="navbar">
         <div className="logo">TestForce</div>
-        <nav>
+
+        <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
