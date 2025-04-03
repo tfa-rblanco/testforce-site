@@ -58,7 +58,7 @@ export default function HomePage() {
           <h2>Contact</h2>
           <p>
             Ready to elevate your software quality? Reach out to us today for a
-            consultation.
+            consultation or book a demo for <a href="https://www.autox.testforce.com.au/" target="_blank" rel="noopener noreferrer">autoX</a> automation builder by contacting richard.blanco@testforce.com.au.
           </p>
         </section>
       </main>
