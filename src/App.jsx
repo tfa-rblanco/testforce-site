@@ -56,9 +56,12 @@ export default function HomePage() {
 
         <section id="contact">
           <h2>Contact</h2>
-          <p>
-            Ready to elevate your software quality? Reach out to us today for a
-            consultation or book a demo for <a href="https://www.autox.testforce.com.au/" target="_blank" rel="noopener noreferrer">autoX</a> automation builder by contacting richard.blanco@testforce.com.au.
+          <p className="tight">
+            Ready to elevate your software quality? 
+          </p>
+          <p className="tight">
+          Reach out to us today for a
+          consultation or book a demo for <a href="https://www.autox.testforce.com.au/" target="_blank" rel="noopener noreferrer" className="contact-link">autoX</a> automation builder by contacting info@testforce.com.au.
           </p>
         </section>
       </main>

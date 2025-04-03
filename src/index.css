@@ -28,6 +28,18 @@ body {
   padding: 2rem 0;
 }
 
+.contact-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #339dff;
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -48,6 +60,10 @@ h2 {
 p {
   margin-bottom: 1.5rem;
   color: #ccc;
+}
+
+p.tight {
+  margin-bottom: 0.25rem;
 }
 
 .navbar {
