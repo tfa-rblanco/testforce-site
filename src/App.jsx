@@ -36,7 +36,15 @@ export default function HomePage() {
           </button>
         </div>
       </section>
-
+      <div className="clients-wrapper">
+        <h2>Our clients</h2>
+        <div className="client-carousel">
+          <div className="carousel-track">
+            <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
+            <img src="/clients/cst.png" alt="Consulting Software Testing" />
+          </div>
+        </div>
+      </div>
       <main className="container">
         <section id="services">
           <h2>Our Services</h2>
