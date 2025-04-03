@@ -21,6 +21,7 @@ export default function HomePage() {
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a href="https://www.autox.testforce.com.au/">autoX</a>
         </nav>
       </header>
 
