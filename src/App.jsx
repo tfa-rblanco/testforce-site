@@ -4,6 +4,10 @@ import "./index.css";
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleRedirect = () => {
+    window.location.href = "https://www.autox.testforce.com.au/";
+  };
+
   return (
     <div>
       <header className="navbar">
@@ -27,9 +31,9 @@ export default function HomePage() {
             Powerful automation, unmatched quality, zero bugs. Your trusted QA
             partner.
           </p>
-          <a href="#contact" className="button">
+          <button className="button" onClick={handleRedirect}>
             Get Started with autoX
-          </a>
+          </button>
         </div>
       </section>
 
