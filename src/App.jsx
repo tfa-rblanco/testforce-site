@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="logo">TestForce</div>
 
         <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
+          {menuOpen ? "✕" : "☰"}
         </div>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>

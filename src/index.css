@@ -157,32 +157,46 @@ p.tight {
 
   .burger {
     display: block;
+    z-index: 1001;
   }
 
   .nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
-    background-color: #000;
-    width: 100%;
-    position: absolute;
-    top: 70px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
     right: 0;
-    padding: 1rem 2rem;
-    text-align: right;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   .nav-links.open {
-    display: flex;
+    transform: translateX(0);
   }
 
   .nav-links a {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--accent-color);
   }
 
   .navbar {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
+  
 }
 
 @media (max-width: 480px) {
