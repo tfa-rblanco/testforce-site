@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 
 export default function HomePage() {
@@ -7,6 +7,18 @@ export default function HomePage() {
   const handleRedirect = () => {
     window.location.href = "https://www.autox.testforce.com.au/";
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://embed.tawk.to/67f09b52d1d92f190a047b2b/1io1ttek7";
+    script.async = true;
+    script.charset = "UTF-8";
+    script.setAttribute("crossorigin", "*");
+    document.body.appendChild(script);
+  
+    // Optional: no need to hideWidget since you want it always visible
+    window.Tawk_API = window.Tawk_API || {};
+  }, []);
 
   return (
     <div>
