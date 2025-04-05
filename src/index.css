@@ -205,6 +205,83 @@ p.tight {
   border: none;
 }
 
+.marketing {
+  background-color: #0b0b0b;
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.marketing h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.marketing p,
+.marketing li {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.marketing ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.marketing ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.marketing ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cta-buttons .button {
+  background-color: var(--accent-color);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .button:hover {
+  background-color: #339dff;
+}
+
+.phone-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.phone-button:hover {
+  background-color: #339dff;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
