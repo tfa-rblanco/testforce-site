@@ -56,12 +56,16 @@ export default function HomePage() {
             <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
             <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
             </a>
-            <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+            <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+            </a>
             {/* Duplicating */}
             <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
             <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
             </a>
-            <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+            <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+            </a>
           </div>
         </div>
       </div>
