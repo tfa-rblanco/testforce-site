@@ -6,7 +6,7 @@ export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleRedirect = () => {
-    window.location.href = "https://www.autox.testforce.com.au/";
+    window.location.href = "https://autox.solutions";
   };
 
   useEffect(() => {
