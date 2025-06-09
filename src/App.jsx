@@ -79,18 +79,24 @@ export default function HomePage() {
           <div className="service-buttons" style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
             <Button
               type={activeService === 'managed' ? 'primary' : 'default'}
+              ghost={activeService !== 'managed'}
+              style={activeService !== 'managed' ? { backgroundColor: "transparent", border: "1px solid #d9d9d9" } : {}}
               onClick={() => setActiveService('managed')}
             >
               <span style={{ fontSize: "1.2rem" }}>Managed Services</span>
             </Button>
             <Button
               type={activeService === 'software' ? 'primary' : 'default'}
+              ghost={activeService !== 'software'}
+              style={activeService !== 'software' ? { backgroundColor: "transparent", border: "1px solid #d9d9d9" } : {}}
               onClick={() => setActiveService('software')}
             >
               <span style={{ fontSize: "1.2rem" }}>Software Development</span>
             </Button>
             <Button
               type={activeService === 'quality' ? 'primary' : 'default'}
+              ghost={activeService !== 'quality'}
+              style={activeService !== 'quality' ? { backgroundColor: "transparent", border: "1px solid #d9d9d9" } : {}}
               onClick={() => setActiveService('quality')}
             >
               <span style={{ fontSize: "1.2rem" }}>Quality Engineering</span>
