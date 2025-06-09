@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { FaPhone } from "react-icons/fa";
 import "./index.css";
-import { MdHeight } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
+import { Button } from "antd";
+import QualityEngineering from "./components/services/QualityEngineering";
+import ManagedServices from "./components/services/ManagedService";
+import SoftwareDevelopment from "./components/services/SoftwareDevelopment";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeService, setActiveService] = useState('managed');
 
   const handleRedirect = () => {
     window.location.href = "https://autox.solutions";
@@ -17,7 +21,7 @@ export default function HomePage() {
     script.charset = "UTF-8";
     script.setAttribute("crossorigin", "*");
     document.body.appendChild(script);
-  
+
     // Optional: no need to hideWidget since you want it always visible
     window.Tawk_API = window.Tawk_API || {};
   }, []);
@@ -25,7 +29,7 @@ export default function HomePage() {
   return (
     <div>
       <header className="navbar">
-        <div className="logo">TestForce</div>
+        <div className="logo">Test Force Australia</div>
 
         <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✕" : "☰"}
@@ -40,66 +44,74 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="hero-content">
-          <h1>Software Testing. Elevated.</h1>
-          <p>
-            Powerful automation, unmatched quality, zero bugs. Your trusted QA
-            partner.
+          <h1 style={{marginTop: "5rem"}}>Engineering Excellence. Delivered.</h1>
+          <p >
+            Your Strategic Partner for Development, Testing, and Support Services
           </p>
-          <button className="button" onClick={handleRedirect}>
-            Get Started with Auto Mate Solutions
-          </button>
+          <p style={{ fontSize: "0.9rem", whiteSpace: "nowrap", textOverflow: "ellipsis", marginBottom: "4rem", width: "100%" }}>
+            Full-cycle development, world-class QA, and reliable support from a hybrid team based in onshore and offshore.
+          </p>
         </div>
-      </section>
-      <div className="clients-wrapper">
-        <h2>Our clients</h2>
-        <div className="client-carousel">
-          <div className="carousel-track">
-            <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
-            <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
-            </a>
-            <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
-            </a>
-            {/* Duplicating */}
-            <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
-            <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
-            </a>
-            <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
-            </a>
+        <div className="clients-wrapper">
+          <h2>Our clients</h2>
+          <div className="client-carousel">
+            <div className="carousel-track">
+              <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
+              </a>
+              <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+              </a>
+              {/* Duplicating */}
+              <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
+              </a>
+              <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <main className="container">
         <section id="services" className="marketing">
           <h2>Our Services</h2>
-            <div className="container">
-              <p>Empower Your Team with Better Software Engineering - On Us.</p>
-              <p>
-                At <strong>Test Force</strong>, we don't just offer test automation tools—we partner with you to transform how your teams build and ship software. When you outsource your testing needs to us, you’re not just offloading work—you’re investing in engineering excellence.
-              </p>
-              <div style={{ width: 'auto', marginLeft: "10%", marginRight: "10%", alignContent: "center"}}>
-                <ul>
-                  <ol style={{ verticalAlign: "center", textIndent: "-30px"}}><strong>✅ Modernize Your Testing Practice:</strong> We embed our experts within your team to evangelize scalable software engineering practices, test automation strategy, and DevOps alignment.</ol>
-                  <ol style={{ verticalAlign: "center", textIndent: "-30px"}}><strong>✅ Access <img style={{ height: "20px", alignContent: "center", offset: "100px",  verticalAlign: "text-bottom"}} src="/auto-mate.png"></img> Solutions—For Free:</strong> Clients who outsource testing to us get <strong>full access to Auto Mate Solutions</strong>, our in-house test automation platform, at <strong>no additional cost</strong>.</ol>
-                  <ol style={{ verticalAlign: "center", textIndent: "-30px"}}><strong>✅ Faster Releases, Higher Confidence:</strong> With robust test coverage and automation pipelines in place, your teams move faster, reduce bugs, and boost user trust.</ol>
-                  <ol style={{ verticalAlign: "center", textIndent: "-30px"}}><strong>✅ Build a Culture of Quality:</strong> We don’t just run tests. We help your developers, testers, and stakeholders adopt a quality-first mindset that lasts beyond our engagement.</ol>
-                </ul>
-              </div>
-              <p>
-                <strong>Ready to Transform Your QA Process?</strong><br/>
-                Let’s explore how we can help you scale quality engineering—and give you powerful platform like Auto Mate Solutions, for free.
-              </p>
-              <div className="cta-buttons">
-                <button className="button">
-                  <a href="tel:+61450025027" className="button phone-button">
-                    <FaPhone style={{ marginRight: "8px" }} />
-                    +61 450 025 027
-                  </a>
-                </button>
-                <button className="button" onClick={handleRedirect}>Get a Demo of Auto Mate Solutions</button>
-              </div>
-            </div>
+          <div className="service-buttons" style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
+            <Button
+              type={activeService === 'managed' ? 'primary' : 'default'}
+              onClick={() => setActiveService('managed')}
+            >
+              <span style={{ fontSize: "1.2rem" }}>Managed Services</span>
+            </Button>
+            <Button
+              type={activeService === 'software' ? 'primary' : 'default'}
+              onClick={() => setActiveService('software')}
+            >
+              <span style={{ fontSize: "1.2rem" }}>Software Development</span>
+            </Button>
+            <Button
+              type={activeService === 'quality' ? 'primary' : 'default'}
+              onClick={() => setActiveService('quality')}
+            >
+              <span style={{ fontSize: "1.2rem" }}>Quality Engineering</span>
+            </Button>
+          </div>
+          {activeService === 'managed' && <ManagedServices />}
+          {activeService === 'software' && <SoftwareDevelopment />}
+          {activeService === 'quality' && <QualityEngineering />}
+          <p>
+            <strong>Ready to Transform Your QA Process?</strong><br />
+            Let’s explore how we can help you scale quality engineering—and give you powerful platform like Auto Mate Solutions, for free.
+          </p>
+          <div className="cta-buttons" style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
+            <Button type="primary">
+              <a href="tel:+61450025027">
+                <FaPhone style={{ marginRight: "8px" }} />
+                +61 450 025 027
+              </a>
+            </Button>
+            <Button type="primary" onClick={handleRedirect}>Get a Demo of Auto Mate Solutions</Button>
+          </div>
         </section>
 
         <section id="about">
