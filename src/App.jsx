@@ -50,9 +50,9 @@ export default function HomePage() {
           <p className="responsive-hero-subheading">
             Your Strategic Partner for Development, Testing, and Support Services
           </p>
-          <p className="responsive-hero-description">
-            Full-cycle development, world-class QA, and reliable support from a hybrid team based in onshore and offshore.
-          </p>
+            <p className="responsive-hero-description" style={{fontSize: "1rem", margin: 0}}>
+              Full-cycle development, world-class QA, and reliable support from a hybrid team based in onshore and offshore.
+            </p>
         </div>
         <div className="clients-wrapper">
           <h2>Our Clients</h2>
@@ -108,8 +108,8 @@ export default function HomePage() {
           {activeService === 'software' && <SoftwareDevelopment />}
           {activeService === 'quality' && <QualityEngineering />}
           <p>
-            <strong>Ready to Transform Your QA Process?</strong><br />
-            Let’s explore how we can help you scale quality engineering—and give you powerful platform like Auto Mate Solutions, for free.
+            <strong>Ready to Transform Team?</strong><br />
+            Let’s explore how we can help your through engineering excellence and give you powerful platform like Auto Mate Solutions, for free.
           </p>
           <div className="cta-buttons responsive-cta-buttons" style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
             <Button type="primary">
@@ -125,8 +125,7 @@ export default function HomePage() {
         <section id="about">
           <h2>About Us</h2>
           <p>
-            TestForce is a cutting-edge software testing company delivering
-            precision and reliability through automation-first strategies.
+            TestForce is a cutting-edge software development and testing company delivering precision and reliability through automation-first strategies.
           </p>
         </section>
       </main>
