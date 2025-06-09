@@ -43,17 +43,19 @@ export default function HomePage() {
       </header>
 
       <section className="hero">
-        <div className="hero-content">
-          <h1 style={{marginTop: "5rem"}}>Engineering Excellence. Delivered.</h1>
-          <p >
+        <div className="hero-content responsive-hero-content">
+          <h1 className="responsive-hero-title" style={{ marginTop: "5rem" }}>
+            Engineering Excellence. Delivered.
+          </h1>
+          <p className="responsive-hero-subheading">
             Your Strategic Partner for Development, Testing, and Support Services
           </p>
-          <p style={{ fontSize: "0.9rem", whiteSpace: "nowrap", textOverflow: "ellipsis", marginBottom: "4rem", width: "100%" }}>
+          <p className="responsive-hero-description">
             Full-cycle development, world-class QA, and reliable support from a hybrid team based in onshore and offshore.
           </p>
         </div>
         <div className="clients-wrapper">
-          <h2>Our clients</h2>
+          <h2>Our Clients</h2>
           <div className="client-carousel">
             <div className="carousel-track">
               <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
@@ -76,7 +78,7 @@ export default function HomePage() {
       <main className="container">
         <section id="services" className="marketing">
           <h2>Our Services</h2>
-          <div className="service-buttons" style={{ display: "flex", justifyContent: "center", gap: "2rem" }}>
+          <div className="service-buttons responsive-service-buttons" style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" }}>
             <Button
               type={activeService === 'managed' ? 'primary' : 'default'}
               ghost={activeService !== 'managed'}
@@ -109,7 +111,7 @@ export default function HomePage() {
             <strong>Ready to Transform Your QA Process?</strong><br />
             Let’s explore how we can help you scale quality engineering—and give you powerful platform like Auto Mate Solutions, for free.
           </p>
-          <div className="cta-buttons" style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
+          <div className="cta-buttons responsive-cta-buttons" style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
             <Button type="primary">
               <a href="tel:+61450025027">
                 <FaPhone style={{ marginRight: "8px" }} />
