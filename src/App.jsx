@@ -50,9 +50,6 @@ export default function HomePage() {
           <p className="responsive-hero-subheading">
             Your Strategic Partner for Development, Testing, and Support Services
           </p>
-            <p className="responsive-hero-description" style={{fontSize: "1rem", margin: 0}}>
-              Full-cycle development, world-class QA, and reliable support from a hybrid team based in onshore and offshore.
-            </p>
         </div>
         <div className="clients-wrapper">
           <h2>Our Clients</h2>
@@ -64,6 +61,10 @@ export default function HomePage() {
               <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
               </a>
+              <a href="https://www.dbghealth.com.au/businesses/arrotex-pharmaceuticals" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/arrotex-logo-white.svg" alt="Arrotex Pharmaceuticals" />
+              </a>              
+              
               {/* Duplicating */}
               <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
@@ -71,6 +72,9 @@ export default function HomePage() {
               <a href="https://dnrtradie.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/dnr-tradie-icon.png" alt="DNR Tradie" />
               </a>
+              <a href="https://www.dbghealth.com.au/businesses/arrotex-pharmaceuticals" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/arrotex-logo-white.svg" alt="Arrotex Pharmaceuticals" />
+              </a>                
             </div>
           </div>
         </div>

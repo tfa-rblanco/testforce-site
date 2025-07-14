@@ -147,12 +147,12 @@ p.tight {
   align-items: center; /* centers children horizontally */
   justify-content: center;
   width: 100%;
-  padding: 2rem 0;
+  padding: 10rem 0 0 0;
   text-align: center;
 }
 
 .clients-wrapper h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -355,7 +355,7 @@ p.tight {
   }
 
   .responsive-hero-description {
-    font-size: 0.50rem;
+    font-size: 0.25rem;
     text-align: center;
     padding: 0 1rem;
     margin-bottom: 2rem;
@@ -392,7 +392,7 @@ p.tight {
 }
 
 .client-carousel {
-  width: 300px;             /* width of visible area */
+  width: 750px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -400,14 +400,15 @@ p.tight {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-continuous 8s linear infinite;
+  animation: scroll-continuous 15s linear infinite;
 }
 
 .carousel-track img {
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   object-fit: contain;
   flex-shrink: 0;
+  margin-right: 2rem; /* optional spacing */
 }
 
 @keyframes scroll-continuous {
@@ -415,6 +416,6 @@ p.tight {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-600px); /* shift by 2 logos */
+    transform: translateX(-50%);
   }
 }
