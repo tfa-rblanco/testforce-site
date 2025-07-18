@@ -64,7 +64,9 @@ export default function HomePage() {
               <a href="https://www.dbghealth.com.au/businesses/arrotex-pharmaceuticals" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/arrotex-logo-white.svg" alt="Arrotex Pharmaceuticals" />
               </a>              
-              
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/bonita-it-services.png" alt="Bonita IT Services" />
+              </a>                  
               {/* Duplicating */}
               <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/evoltech-pty-ltd.png" alt="Evoltech Pty Ltd" />
@@ -74,7 +76,10 @@ export default function HomePage() {
               </a>
               <a href="https://www.dbghealth.com.au/businesses/arrotex-pharmaceuticals" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/arrotex-logo-white.svg" alt="Arrotex Pharmaceuticals" />
-              </a>                
+              </a>  
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/bonita-it-services.png" alt="Bonita IT Services" />
+              </a>                              
             </div>
           </div>
         </div>
