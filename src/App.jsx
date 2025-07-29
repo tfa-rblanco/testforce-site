@@ -66,6 +66,9 @@ export default function HomePage() {
               </a>              
               <a href="" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/bonita-it-services.png" alt="Bonita IT Services" />
+              </a>
+              <a href="https://www.jlking.com.au/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/jl-king-co-white.png" alt="JLKing & Co" />
               </a>                  
               {/* Duplicating */}
               <a href="https://evoltech.com.au/" target="_blank" rel="noopener noreferrer">
@@ -79,6 +82,9 @@ export default function HomePage() {
               </a>  
               <a href="" target="_blank" rel="noopener noreferrer">
                 <img src="/clients/bonita-it-services.png" alt="Bonita IT Services" />
+              </a>
+              <a href="https://www.jlking.com.au/" target="_blank" rel="noopener noreferrer">
+                <img src="/clients/jl-king-co-white.png" alt="JLKing & Co" />
               </a>                              
             </div>
           </div>
