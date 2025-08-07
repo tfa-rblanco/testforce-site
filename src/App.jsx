@@ -142,7 +142,6 @@ export default function HomePage() {
           <h2>Our Offices</h2>
           <p>
             <b>Melbourne:</b> <br />Suite 200, Level 3/21 Cityside Drive, Mickleham 3064 Victoria, Australia <br /><br />
-            <b>Philippines:</b> <br />16F High Street South Corporate Plaza Tower 2 26th Street corner 9th Avenue, Bonifacio Global City, Taguig City, 1635 Philippines
           </p>
         </section>
 
